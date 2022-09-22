@@ -17,7 +17,7 @@ export const TodoAdd = ({ onNewTodo }) => {
       done: false,
     };
 
-    onNewTodo(newTodo)
+    onNewTodo(newTodo);
 
     onResetForm();
   };
@@ -27,11 +27,12 @@ export const TodoAdd = ({ onNewTodo }) => {
       <input
         type="text"
         placeholder="Que hay que hacer?"
-        className="form-contol"
+        className="form-control"
         name="description"
         value={description}
         onChange={onInputChange}
       />
+
       <button type="submit" className="btn btn-outline-primary mt-1">
         Agregar
       </button>
