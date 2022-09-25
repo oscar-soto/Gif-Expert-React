@@ -24,3 +24,8 @@ export const useForm = (initialForm = {}) => {
     onResetForm
   };
 };
+
+function userOptions (number) {
+  const options = ['Piedra', 'Papel', 'Tijera']
+  console.log(options[number])
+}
